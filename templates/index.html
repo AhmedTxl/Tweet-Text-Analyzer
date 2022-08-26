@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweets Racism/Sexist Analyzer</title>
+    <link rel="stylesheet" href='/static/styles/style.css'>
+</head>
+<body>
+    <h1>Tweets Racism/Sexist Analyzer</h1>
+    <div class="container">
+        <form name="form", method="post", style="text-align: center;">
+            <br>
+            <p class="twLabel">Enter tweet text:</p> 
+            <textarea name="tweet" placeholder="Write tweet text here!" rows="6" cols="35"></textarea>
+            <br>
+            <br>
+            <button onclick="checkOutput" value="Submit">Check Now!</button>
+        </form>
+        <p style="color: {{colr}}" class="output" id="twt">{{ Output }}</p>
+    </div>
+    
+    <footer>
+        <p class="credits">Developed by Team Number 1. © 2022</p>
+    </footer>
+</body>
+</html>
